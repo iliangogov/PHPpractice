@@ -7,13 +7,25 @@
 <div>
     <h1>
         <?php
-        echo "My first PHP script!";
-        ?>
-    </h1>
-    <h1>
-        <?php
-        $Number = 20;
-        echo 'Value of the number is: ' . $Number;
+        $number = 10;
+        $collection = array('Me', 'You', 'Friends');
+
+        echo 'My first PHP script!' . '</br>';
+        echo 'Value of the number is: ' . $number . '</br>';
+
+        for ($i = 1; $i <= $number; $i++) {
+            if ($i % 2 != 0) {
+                echo 'odd ' . $i . '</br>';
+            } else {
+                echo 'even ' . $i . '</br>';
+            }
+
+        }
+
+        foreach ($collection as $item) {
+            echo $item . '  ';
+        }
+
         ?>
     </h1>
 </div>
